@@ -1,5 +1,5 @@
 let totalCompra = 0
-let seleccionarHamburguesa = parseInt(prompt('Ingrese el tipo de hamburguesa que desee: 1:Titan 2:Pitufa 3:Roquefeler 4:Wolter'))
+const seleccionarHamburguesa = parseInt(prompt('Ingrese el tipo de hamburguesa que desee: 1:Titan 2:Pitufa 3:Roquefeler 4:Wolter'))
 let comprar = true
 let decision
 
@@ -47,8 +47,6 @@ return valor
 }
 let valorConDescuento = calcularPrecioConDescuento(totalCompra)
 alert('el valor con descuento es de '+valorConDescuento)
-
-
 
 
 
