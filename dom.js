@@ -19,21 +19,24 @@ let producto7 = new Producto ("jugo", 150)
 let producto8 = new Producto ("gaseosa", 200)
 let producto9 = new Producto ("cerveza", 300)
 
-productos.push (producto1.nombre)
-productos.push (producto2.nombre)
-productos.push (producto3.nombre)
-productos.push (producto4.nombre)
-productos.push (producto5.nombre)
-productos.push (producto6.nombre)
-productos.push (producto7.nombre)
-productos.push (producto8.nombre)
-productos.push (producto9.nombre)
+productos.push (producto1)
+productos.push (producto2)
+productos.push (producto3)
+productos.push (producto4)
+productos.push (producto5)
+productos.push (producto6)
+productos.push (producto7)
+productos.push (producto8)
+productos.push (producto9)
 
 console.log(productos)
 
-productos.forEach(productoss=>{
+productos.findIndex(producto=>{
     const option = document.createElement('option')
-    option.innerText = `${productos.nombre}`
+    option.innerText = `${producto.nombre}: $${producto.precio}`
     selectTag.append (option)
-}
-    )
+})
+
+const boton = document.createElement('button')
+boton.innerText = ('AGREGAR PRODUCTO')
+document.body.append(boton)
